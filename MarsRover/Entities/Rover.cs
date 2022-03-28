@@ -24,7 +24,7 @@ internal class Rover : IRoverCommand
                 _directives = _directives.TurnRight();
                 break;
             case Command.M:
-                if ((_directives.Position.XPoint <= Plateau.XEdge && _directives.Position.YPoint <= Plateau.XEdge))
+                //if ((_directives.Position.XPoint <= Plateau.XEdge && _directives.Position.YPoint <= Plateau.YEdge))
                     _directives.MoveForward();
                 break;
             default: throw new ArgumentException("Invalid move command");

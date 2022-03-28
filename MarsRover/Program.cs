@@ -67,8 +67,11 @@ if (coordinates.Length == Constants.EdgeLength)
             });
 
             if (rover.RoverPosition != null)
+            {
                 Console.WriteLine(rover.RoverPosition.XPoint + " " + rover.RoverPosition.YPoint + " " +
                                   rover.RoverPosition.Direction);
+                Plateau.Rovers.Add(rover);
+            }
 
             Console.ReadKey();
         }
